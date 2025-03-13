@@ -308,7 +308,7 @@
 </body>
 <script>
     function toggleMusic() {
-        var music = document.getElementById("music");
+        var music = document.getElementById("music").loop = true;
         if (music.paused) {
             music.play();
         } else {
