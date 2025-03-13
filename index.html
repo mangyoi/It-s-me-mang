@@ -224,7 +224,7 @@
 <body>
     <div class="card-container">
         <img class="music-icon" src="assets/icon/music-notes.png" alt="Music Icon" onclick="toggleMusic()">
-        <audio id="music" src="assets/Undertale OST_ 049 - It's Showtime!.mp3"></audio>
+        <audio id="music" src="assets/Undertale OST_ 049 - It's Showtime!.mp3" loop></audio>
         <div class="" style="display: flex; justify-content: space-between; margin-top: 40px; margin-right: 40px; margin-left: 40px;">
             <h2>Hello There!!</h2>
             <span class="year">2025</span>
@@ -308,7 +308,7 @@
 </body>
 <script>
     function toggleMusic() {
-        var music = document.getElementById("music").loop = true;
+        var music = document.getElementById("music");
         if (music.paused) {
             music.play();
         } else {
